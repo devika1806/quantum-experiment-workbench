@@ -1,0 +1,36 @@
+name: Workbench checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -c "import platform; print(platform.platform(), platform.machine(), platform.python_version())"
+      - run: python -m unittest discover -s tests -v
+      - run: python -m workbench --rates 0,0.1,0.5,1 --shots 1000 --out local-runs/ci
+  interface-and-quantum:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt -r requirements-research.txt
+      - run: python -m pip check
+      - run: python -m unittest discover -s tests -v
+      - run: python verify_quantum.py
+      - run: python make_figures.py
