@@ -1,0 +1,10 @@
+{
+  "qiskit_version": "2.5.2",
+  "state_pattern_checks": 112,
+  "channel_probability_checks": 202,
+  "total_checks": 314,
+  "max_absolute_error": 4.440892098500626e-16,
+  "tolerance": 1e-10,
+  "passed": true,
+  "scope": "Ideal unitary encoding/recovery; 7 probe states; all 8 patterns; separate X and Z noise; no hardware"
+}
