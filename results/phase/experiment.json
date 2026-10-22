@@ -1,0 +1,654 @@
+{
+  "assumptions": [
+    "One round; independent identical errors on data qubits only",
+    "Ideal preparation, encoding, recovery, decoding and readout",
+    "Fixed majority decoder; no optimization above p=0.5",
+    "Phase demonstration uses plus input and X readout"
+  ],
+  "engine_sha256": "32958d8758872c8e7caeb2c6206a0e96a98bf04b458cb1dbdad372d7663f9970",
+  "engine_version": "0.1.0",
+  "interval": "Pointwise approximate 95% Wilson; not simultaneous or a difference test",
+  "points": [
+    {
+      "p": 0.0,
+      "physical_error_patterns_q2q1q0": {
+        "000": 50000,
+        "001": 0,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 0
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 7.682327414500052e-05,
+          "ci_low": 0.0,
+          "errors": 0,
+          "expected": 0.0,
+          "outcome_0": 50000,
+          "outcome_1": 0,
+          "p": 0.0,
+          "rate": 0.0,
+          "shots": 50000,
+          "stream_seed": "7622955987553169960"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 7.682327414500052e-05,
+          "ci_low": 0.0,
+          "errors": 0,
+          "expected": 0.0,
+          "outcome_0": 50000,
+          "outcome_1": 0,
+          "p": 0.0,
+          "rate": 0.0,
+          "shots": 50000,
+          "stream_seed": "11282432151148022734"
+        }
+      ]
+    },
+    {
+      "p": 0.01,
+      "physical_error_patterns_q2q1q0": {
+        "000": 48494,
+        "001": 494,
+        "010": 507,
+        "011": 5,
+        "100": 494,
+        "101": 3,
+        "110": 3,
+        "111": 0
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.01066015565016858,
+          "ci_low": 0.00893516803366511,
+          "errors": 488,
+          "expected": 0.01,
+          "outcome_0": 49512,
+          "outcome_1": 488,
+          "p": 0.01,
+          "rate": 0.00976,
+          "shots": 50000,
+          "stream_seed": "9400570334899816034"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.031429312326598326,
+          "ci_low": 0.028442916915752802,
+          "errors": 1495,
+          "expected": 0.029404,
+          "outcome_0": 48505,
+          "outcome_1": 1495,
+          "p": 0.01,
+          "rate": 0.0299,
+          "shots": 50000,
+          "stream_seed": "11015780776912002366"
+        }
+      ]
+    },
+    {
+      "p": 0.02,
+      "physical_error_patterns_q2q1q0": {
+        "000": 47061,
+        "001": 989,
+        "010": 977,
+        "011": 20,
+        "100": 917,
+        "101": 14,
+        "110": 21,
+        "111": 1
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.021799985420515224,
+          "ci_low": 0.019313685026458863,
+          "errors": 1026,
+          "expected": 0.02,
+          "outcome_0": 48974,
+          "outcome_1": 1026,
+          "p": 0.02,
+          "rate": 0.02052,
+          "shots": 50000,
+          "stream_seed": "9464188666757194572"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.0597576857928413,
+          "ci_low": 0.05567027514839834,
+          "errors": 2884,
+          "expected": 0.057631999999999996,
+          "outcome_0": 47116,
+          "outcome_1": 2884,
+          "p": 0.02,
+          "rate": 0.05768,
+          "shots": 50000,
+          "stream_seed": "18048277163093451818"
+        }
+      ]
+    },
+    {
+      "p": 0.05,
+      "physical_error_patterns_q2q1q0": {
+        "000": 42972,
+        "001": 2197,
+        "010": 2257,
+        "011": 97,
+        "100": 2217,
+        "101": 124,
+        "110": 129,
+        "111": 7
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.050580812583001636,
+          "ci_low": 0.046808534250103576,
+          "errors": 2433,
+          "expected": 0.05,
+          "outcome_0": 47567,
+          "outcome_1": 2433,
+          "p": 0.05,
+          "rate": 0.04866,
+          "shots": 50000,
+          "stream_seed": "7702065625185869377"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.13656991475932403,
+          "ci_low": 0.13060638748183137,
+          "errors": 6678,
+          "expected": 0.1355,
+          "outcome_0": 43322,
+          "outcome_1": 6678,
+          "p": 0.05,
+          "rate": 0.13356,
+          "shots": 50000,
+          "stream_seed": "5029542372071518923"
+        }
+      ]
+    },
+    {
+      "p": 0.1,
+      "physical_error_patterns_q2q1q0": {
+        "000": 36426,
+        "001": 4079,
+        "010": 4025,
+        "011": 476,
+        "100": 4060,
+        "101": 440,
+        "110": 448,
+        "111": 46
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.10547233600615086,
+          "ci_low": 0.10014869547576088,
+          "errors": 5139,
+          "expected": 0.1,
+          "outcome_0": 44861,
+          "outcome_1": 5139,
+          "p": 0.1,
+          "rate": 0.10278,
+          "shots": 50000,
+          "stream_seed": "9383385546038332065"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.24798520291348886,
+          "ci_low": 0.2404540998735637,
+          "errors": 12210,
+          "expected": 0.24400000000000005,
+          "outcome_0": 37790,
+          "outcome_1": 12210,
+          "p": 0.1,
+          "rate": 0.2442,
+          "shots": 50000,
+          "stream_seed": "1927344973622995469"
+        }
+      ]
+    },
+    {
+      "p": 0.15,
+      "physical_error_patterns_q2q1q0": {
+        "000": 30775,
+        "001": 5357,
+        "010": 5483,
+        "011": 970,
+        "100": 5386,
+        "101": 944,
+        "110": 923,
+        "111": 162
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.15085715824886775,
+          "ci_low": 0.14463696835716383,
+          "errors": 7386,
+          "expected": 0.15,
+          "outcome_0": 42614,
+          "outcome_1": 7386,
+          "p": 0.15,
+          "rate": 0.14772,
+          "shots": 50000,
+          "stream_seed": "16631700298508455608"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.33188746428094007,
+          "ci_low": 0.32365899980053725,
+          "errors": 16388,
+          "expected": 0.32849999999999996,
+          "outcome_0": 33612,
+          "outcome_1": 16388,
+          "p": 0.15,
+          "rate": 0.32776,
+          "shots": 50000,
+          "stream_seed": "8922285865609803567"
+        }
+      ]
+    },
+    {
+      "p": 0.2,
+      "physical_error_patterns_q2q1q0": {
+        "000": 25685,
+        "001": 6479,
+        "010": 6347,
+        "011": 1519,
+        "100": 6391,
+        "101": 1588,
+        "110": 1599,
+        "111": 392
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.2025829566427416,
+          "ci_low": 0.19558328174950076,
+          "errors": 9953,
+          "expected": 0.2,
+          "outcome_0": 40047,
+          "outcome_1": 9953,
+          "p": 0.2,
+          "rate": 0.19906,
+          "shots": 50000,
+          "stream_seed": "2140837026366120088"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.39646762939951247,
+          "ci_low": 0.38790893677132404,
+          "errors": 19609,
+          "expected": 0.3920000000000001,
+          "outcome_0": 30391,
+          "outcome_1": 19609,
+          "p": 0.2,
+          "rate": 0.39218,
+          "shots": 50000,
+          "stream_seed": "4223161104276689784"
+        }
+      ]
+    },
+    {
+      "p": 0.3,
+      "physical_error_patterns_q2q1q0": {
+        "000": 16944,
+        "001": 7419,
+        "010": 7409,
+        "011": 3071,
+        "100": 7450,
+        "101": 3213,
+        "110": 3170,
+        "111": 1324
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.30429294439415583,
+          "ci_low": 0.2962577449673996,
+          "errors": 15013,
+          "expected": 0.3,
+          "outcome_0": 34987,
+          "outcome_1": 15013,
+          "p": 0.3,
+          "rate": 0.30026,
+          "shots": 50000,
+          "stream_seed": "13483005654205058976"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.47641773544380045,
+          "ci_low": 0.46766656051368966,
+          "errors": 23602,
+          "expected": 0.46799999999999986,
+          "outcome_0": 26398,
+          "outcome_1": 23602,
+          "p": 0.3,
+          "rate": 0.47204,
+          "shots": 50000,
+          "stream_seed": "6117677734046244321"
+        }
+      ]
+    },
+    {
+      "p": 0.4,
+      "physical_error_patterns_q2q1q0": {
+        "000": 10904,
+        "001": 7287,
+        "010": 7160,
+        "011": 4839,
+        "100": 7104,
+        "101": 4823,
+        "110": 4699,
+        "111": 3184
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.41029149654126956,
+          "ci_low": 0.40168294930720055,
+          "errors": 20299,
+          "expected": 0.4,
+          "outcome_0": 29701,
+          "outcome_1": 20299,
+          "p": 0.4,
+          "rate": 0.40598,
+          "shots": 50000,
+          "stream_seed": "2300079978006957411"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.49908260532594906,
+          "ci_low": 0.49031820900075673,
+          "errors": 24735,
+          "expected": 0.49600000000000005,
+          "outcome_0": 25265,
+          "outcome_1": 24735,
+          "p": 0.4,
+          "rate": 0.4947,
+          "shots": 50000,
+          "stream_seed": "5992347395326194179"
+        }
+      ]
+    },
+    {
+      "p": 0.5,
+      "physical_error_patterns_q2q1q0": {
+        "000": 6291,
+        "001": 6244,
+        "010": 6407,
+        "011": 6136,
+        "100": 6198,
+        "101": 6259,
+        "110": 6210,
+        "111": 6255
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.503862481934579,
+          "ci_low": 0.4950975979616259,
+          "errors": 24974,
+          "expected": 0.5,
+          "outcome_0": 25026,
+          "outcome_1": 24974,
+          "p": 0.5,
+          "rate": 0.49948,
+          "shots": 50000,
+          "stream_seed": "15544307574750019976"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.5064622466462454,
+          "ci_low": 0.4976974337689341,
+          "errors": 25104,
+          "expected": 0.5,
+          "outcome_0": 24896,
+          "outcome_1": 25104,
+          "p": 0.5,
+          "rate": 0.50208,
+          "shots": 50000,
+          "stream_seed": "5084475268902727231"
+        }
+      ]
+    },
+    {
+      "p": 0.6,
+      "physical_error_patterns_q2q1q0": {
+        "000": 3230,
+        "001": 4767,
+        "010": 4834,
+        "011": 7149,
+        "100": 4832,
+        "101": 7204,
+        "110": 7260,
+        "111": 10724
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.6070809281451549,
+          "ci_low": 0.5985032769896809,
+          "errors": 30140,
+          "expected": 0.6,
+          "outcome_0": 19860,
+          "outcome_1": 30140,
+          "p": 0.6,
+          "rate": 0.6028,
+          "shots": 50000,
+          "stream_seed": "18416472920103479129"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.5075221167187305,
+          "ci_low": 0.4987574008311079,
+          "errors": 25157,
+          "expected": 0.504,
+          "outcome_0": 24843,
+          "outcome_1": 25157,
+          "p": 0.6,
+          "rate": 0.50314,
+          "shots": 50000,
+          "stream_seed": "12221972347465542025"
+        }
+      ]
+    },
+    {
+      "p": 0.7,
+      "physical_error_patterns_q2q1q0": {
+        "000": 1348,
+        "001": 3193,
+        "010": 3135,
+        "011": 7321,
+        "100": 3070,
+        "101": 7461,
+        "110": 7319,
+        "111": 17153
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.7018695391821391,
+          "ci_low": 0.6938200603118162,
+          "errors": 34893,
+          "expected": 0.7,
+          "outcome_0": 15107,
+          "outcome_1": 34893,
+          "p": 0.7,
+          "rate": 0.69786,
+          "shots": 50000,
+          "stream_seed": "12947238071492136832"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.535391619886385,
+          "ci_low": 0.5266436139976872,
+          "errors": 26551,
+          "expected": 0.5319999999999999,
+          "outcome_0": 23449,
+          "outcome_1": 26551,
+          "p": 0.7,
+          "rate": 0.53102,
+          "shots": 50000,
+          "stream_seed": "17246389284410827330"
+        }
+      ]
+    },
+    {
+      "p": 0.8,
+      "physical_error_patterns_q2q1q0": {
+        "000": 435,
+        "001": 1551,
+        "010": 1628,
+        "011": 6387,
+        "100": 1611,
+        "101": 6346,
+        "110": 6241,
+        "111": 25801
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.8057675986756034,
+          "ci_low": 0.7987859539728486,
+          "errors": 40115,
+          "expected": 0.8,
+          "outcome_0": 9885,
+          "outcome_1": 40115,
+          "p": 0.8,
+          "rate": 0.8023,
+          "shots": 50000,
+          "stream_seed": "355809194763799201"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.6160828632622635,
+          "ci_low": 0.6075399559807069,
+          "errors": 30591,
+          "expected": 0.6080000000000001,
+          "outcome_0": 19409,
+          "outcome_1": 30591,
+          "p": 0.8,
+          "rate": 0.61182,
+          "shots": 50000,
+          "stream_seed": "4970137871555096452"
+        }
+      ]
+    },
+    {
+      "p": 0.9,
+      "physical_error_patterns_q2q1q0": {
+        "000": 39,
+        "001": 462,
+        "010": 515,
+        "011": 4186,
+        "100": 455,
+        "101": 4107,
+        "110": 4018,
+        "111": 36218
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 0.9039823705433162,
+          "ci_low": 0.8987559557322001,
+          "errors": 45070,
+          "expected": 0.9,
+          "outcome_0": 4930,
+          "outcome_1": 45070,
+          "p": 0.9,
+          "rate": 0.9014,
+          "shots": 50000,
+          "stream_seed": "5826655011507777456"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 0.7567606186518252,
+          "ci_low": 0.7492005087714575,
+          "errors": 37650,
+          "expected": 0.7560000000000001,
+          "outcome_0": 12350,
+          "outcome_1": 37650,
+          "p": 0.9,
+          "rate": 0.753,
+          "shots": 50000,
+          "stream_seed": "4067381836568516109"
+        }
+      ]
+    },
+    {
+      "p": 1.0,
+      "physical_error_patterns_q2q1q0": {
+        "000": 0,
+        "001": 0,
+        "010": 0,
+        "011": 0,
+        "100": 0,
+        "101": 0,
+        "110": 0,
+        "111": 50000
+      },
+      "rows": [
+        {
+          "arm": "Unprotected",
+          "ci_high": 1.0,
+          "ci_low": 0.9999231767258548,
+          "errors": 50000,
+          "expected": 1.0,
+          "outcome_0": 0,
+          "outcome_1": 50000,
+          "p": 1.0,
+          "rate": 1.0,
+          "shots": 50000,
+          "stream_seed": "9211966050469995704"
+        },
+        {
+          "arm": "Repetition code",
+          "ci_high": 1.0,
+          "ci_low": 0.9999231767258548,
+          "errors": 50000,
+          "expected": 1.0,
+          "outcome_0": 0,
+          "outcome_1": 50000,
+          "p": 1.0,
+          "rate": 1.0,
+          "shots": 50000,
+          "stream_seed": "11074676634814811620"
+        }
+      ]
+    }
+  ],
+  "python_version": "3.14.4",
+  "rates": [
+    0.0,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "rng": "Python random.Random; SHA256-derived independent arm/rate streams v1",
+  "schema_version": 1,
+  "settings": {
+    "initial": "+",
+    "noise": "phase",
+    "seed": 1806,
+    "shots": 50000
+  }
+}
